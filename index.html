@@ -1,5 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head><title>我的个人主页</title></head>
-<body><h1>欢迎访问我的GitHub Pages主页！</h1></body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin man | Cyberpunk Web3 Trader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', 'Courier New', monospace;
+            background: url('https://4kwallpapers.com/images/wallpapers/neon-city-futuristic-city-cyber-city-cyberpunk-cityscape-5k-2560x1440-8801.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #0ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        .overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 20, 0.7);
+            pointer-events: none;
+        }
+        .container {
+            position: relative;
+            max-width: 900px;
+            padding: 40px;
+            text-align: center;
+            background: rgba(10, 0, 30, 0.6);
+            border: 2px solid #f0f;
+            border-radius: 10px;
+            box-shadow: 0 0 40px #f0f, inset 0 0 20px #0ff;
+            animation: glitch 4s infinite;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 0 0 10px #0ff; }
+            2% { text-shadow: 5px 0 10px #f0f, -5px 0 10px #0ff; }
+            4% { text-shadow: none; }
+            100% { text-shadow: 0 0 10px #0ff; }
+        }
+        .avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 4px solid #0ff;
+            box-shadow: 0 0 30px #0ff, 0 0 60px #f0f;
+            margin-bottom: 30px;
+            transition: all 0.3s;
+        }
+        .avatar:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 50px #0ff, 0 0 100px #f0f;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 0 0 20px #f0f;
+            animation: neon 1.5s ease-in-out infinite alternate;
+        }
+        @keyframes neon {
+            from { text-shadow: 0 0 10px #f0f, 0 0 20px #f0f, 0 0 30px #0ff; }
+            to { text-shadow: 0 0 20px #f0f, 0 0 30px #f0f, 0 0 40px #0ff; }
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 10px 0;
+            color: #ff0;
+            text-shadow: 0 0 15px #ff0;
+        }
+        p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin: 30px 0;
+            text-shadow: 0 0 10px #0ff;
+        }
+        .links a {
+            display: inline-block;
+            margin: 15px 25px;
+            padding: 15px 30px;
+            background: transparent;
+            border: 2px solid #0ff;
+            color: #0ff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-radius: 5px;
+            transition: all 0.4s;
+            box-shadow: 0 0 20px #0ff;
+        }
+        .links a:hover {
+            background: #0ff;
+            color: #000;
+            box-shadow: 0 0 40px #0ff;
+            transform: translateY(-5px);
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 1em;
+            color: #f0f;
+            text-shadow: 0 0 10px #f0f;
+        }
+        /* 雨效（可选，纯CSS模拟下雨） */
+        .rain {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(transparent, rgba(0,255,255,0.05));
+            animation: rain 0.5s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes rain {
+            from { transform: translateY(-100%); }
+            to { transform: translateY(100%); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="rain"></div>
+    
+    <div class="container">
+        <img src="https://pbs.twimg.com/profile_images/1934960474535424000/ERZIN_De.jpg" alt="Avatar" class="avatar">
+        <h1>Coin Man</h1>
+        <h2>@smilebadday3</h2>
+        <p>
+            Web3 Trader & Builder<br>
+            x402 Enthusiast<br>
+            From 1k to 1000k USDT Challenge<br>
+            Exploring Remote Opportunities in Web3
+        </p>
+        
+        <div class="links">
+            <a href="https://x.com/smilebadday3" target="_blank">CONNECT ON X</a>
+            <!-- 加其他链接在这里 -->
+        </div>
+        
+        <footer>NEURAL LINK ACTIVE | 2077 WEB3 FRONTIER</footer>
+    </div>
+</body>
 </html>
